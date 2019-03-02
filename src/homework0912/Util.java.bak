@@ -1,0 +1,29 @@
+public class Util{
+
+	public int findPrimeCount(int limit){
+
+		boolean prime=false;
+		int sum=0;
+
+		for(int i=2;i<=limit;i++){
+			prime=true;
+
+			for(int j=2;j<i;j++){
+				if(i%j==0){
+					prime=false;
+					break;
+				}
+			}if(prime){
+				sum++;
+			}
+		}return sum;	
+	}
+
+
+	public int[] findPrimeReturnArray(int limit){
+		int sum=findPrimeCount(limit);
+
+	
+	}
+
+}

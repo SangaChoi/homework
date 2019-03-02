@@ -1,0 +1,31 @@
+public class Circle extends Shape{
+
+////////////Field
+	private double radius=0;
+
+///////////Constructor
+	public Circle(){
+	}
+	public Circle(String name, int radius){
+		super(name);
+		this.radius=radius;
+	}
+
+/////////////Method
+	public void calculationArea(){
+		super.area=radius*radius*Math.PI;
+	}
+	public void print(){
+		System.out.println(getName()+"의 면적은 "+area);
+	}
+///////////////Set
+	public void setArea(double area){
+		this.area=area;
+	}
+
+/////////////Get
+	public double getArea(){
+		return area;
+	}
+
+}

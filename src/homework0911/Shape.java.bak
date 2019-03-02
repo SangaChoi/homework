@@ -1,0 +1,31 @@
+abstract class Shape{
+	
+//////////////Field
+	protected double area=0;
+	private String name;
+//////////////Constructor
+	public Shape(){
+	}
+	public Shape(String name){
+		this.name=name;
+	}
+////////////Method
+	abstract void calculationArea();
+
+	void print(){
+	}
+/////////////////Set
+	public void setName(String name){
+		this.name=name;
+	}
+	public void setArea(double area){
+		this.area=area;
+	}
+///////////////Get
+	public String getName(){
+		return name;
+	}
+	public double getArea(){
+		return area;
+	}
+}
